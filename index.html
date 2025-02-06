@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Abramov Front-End developer / Web Expert OÜ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+<section>
+<div class="container">
+<img id="logo" src="https://www.we.ee/themes/wetheme/logo.svg" alt="web expert logo"/>
+<h1>Martin Abramov<br/>Front-End developer / Web Expert OÜ</h1>
+<div class="search-container">
+    <input type="text" id="searchBox" placeholder="Search by user name...">
+</div>
+<button class="add-button" onclick="editUser()">Add New User</button>
+<div id="userGrid"></div>
+</div>
+</section>
+
+<div id="userInfoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="userInfo"></p>
+    </div>
+</div>
+
+<div id="userEditModal" class="modal">
+    <div class="modal-content">
+        <div>
+             <span class="close">&times;</span>
+        </div>
+        <form id="editUserForm">
+            <input type="hidden" id="editUserId" value="">
+            <input type="text" id="editUserName" placeholder="Name">
+            <input type="text" id="editUserUsername" placeholder="Username">
+            <input type="text" id="editUserEmail" placeholder="Email">
+            <input type="text" id="editUserStreet" placeholder="Street">
+            <input type="text" id="editUserSuite" placeholder="Suite">
+            <input type="text" id="editUserCity" placeholder="City">
+            <input type="text" id="editUserZipcode" placeholder="Zipcode">
+            <input type="text" id="editUserLat" placeholder="Latitude">
+            <input type="text" id="editUserLng" placeholder="Longitude">
+            <input type="text" id="editUserPhone" placeholder="Phone">
+            <input type="text" id="editUserWebsite" placeholder="Website">
+            <input type="text" id="editUserCompany" placeholder="Company">
+            <input type="text" id="editUserCatchPhrase" placeholder="Catch Phrase">
+            <input type="text" id="editUserBs" placeholder="BS">
+            <button class="save-button" type="button" onclick="saveOrUpdateUser()">Save Changes</button>
+        </form>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
