@@ -1,3 +1,5 @@
+Front End Task (Martin Abramov)
+
 To run the application, you need to run the index.html file.
 
 The entire application is adapted for various devices including desktop, tablet and phone, and it also uses a fluid layout design.
